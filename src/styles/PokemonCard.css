@@ -1,0 +1,289 @@
+.pokeCard {
+    text-align: center;
+    background-color: #FFF;
+    border: 10px solid #000;
+    border-radius: 10px;
+    width: min(270px, 100%);
+    cursor: pointer;
+    transition-duration: 300ms;
+    transition-property: all;
+}
+
+.pokeCard:hover {
+    transform: scale(1.02);
+}
+
+.pokeCard__header {
+    height: 170px;
+    background: linear-gradient(180deg, #000, #FFF);
+}
+
+.pokeCard__content {
+    position: relative;
+}
+
+.pokeCard__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    transform: translateY(-85%);
+    width: 100%;
+}
+
+.pokeCard__name {
+    padding-top: 15px;
+    text-transform: capitalize;
+}
+
+.pokeCard__types {
+    text-transform: capitalize;
+    margin: 4px 0;
+}
+
+.pokeCard__types-title {
+    color: #9F9F9F;
+    font-size: 15px;
+}
+
+.pokeCard__stats {
+    border-top: 2px solid #9F9F9F;
+    margin-top: 10px;
+    padding-top: 10px;
+    display: grid;
+    grid-auto-rows: 60px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pokeCard__stat {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.pokeCard__stat-name {
+    color: #9F9F9F;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.pokeCard__stat-value {
+    font-weight: 600;
+}
+
+/* TYPES STYLE */
+
+.border-normal {
+    border: 10px solid #735259;
+}
+
+.border-fighting {
+    border: 10px solid #96402A;
+}
+
+.border-flying {
+    border: 10px solid #beb14c;
+}
+
+.border-poison {
+    border: 10px solid #5B3184;
+}
+
+.border-ground {
+    border: 10px solid #654008;
+}
+
+.border-rock {
+    border: 10px solid #7E7E7E;
+}
+
+.border-bug {
+    border: 10px solid #bd4040;
+}
+
+.border-ghost {
+    border: 10px solid #323569;
+}
+
+.border-steel {
+    border: 10px solid #5E736C;
+}
+
+.border-fire {
+    border: 10px solid #F96D6F;
+}
+
+.border-water {
+    border: 10px solid #133258;
+}
+
+.border-grass {
+    border: 10px solid #7EC6C5;
+}
+
+.border-electric {
+    border: 10px solid #0C1395;
+}
+
+.border-psychic {
+    border: 10px solid #E52D2D;
+}
+
+.border-ice {
+    border: 10px solid #6FBEDF;
+}
+
+.border-dragon {
+    border: 10px solid #478A93;
+}
+
+.border-dark {
+    border: 10px solid #030706;
+}
+
+.border-fairy {
+    border: 10px solid #971B45;
+}
+
+.border-unknown {
+    border: 10px solid #696767;
+}
+
+.border-shadow {
+    border: 10px solid #6c31a3;
+}
+
+/* GRADIENT */
+
+.bg-lg-normal {
+    background-image: linear-gradient(0deg, #753b48, #913549, #753b48, #913549);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+
+.bg-lg-fighting {
+    background-image: linear-gradient(0deg, #96402A, #7a3929, #96402A, #7a3929);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-flying {
+    background-image: linear-gradient(0deg, #beb14c, #978f4e, #beb14c, #978f4e);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-poison {
+    background-image: linear-gradient(0deg, #5B3184, #7641aa, #5B3184, #7641aa);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+    
+}
+
+.bg-lg-ground {
+    background-image: linear-gradient(0deg, #654008, #8b5f1c, #654008, #8b5f1c);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-rock {
+    background-image: linear-gradient(0deg, #7E7E7E, #5c5656, #7E7E7E, #5c5656);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-bug {
+    background-image: linear-gradient(0deg, #E52D2D, #bd4040, #E52D2D, #bd4040);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-ghost {
+    background-image: linear-gradient(0deg, #323569, #424469, #323569, #424469);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-steel {
+    background-image: linear-gradient(0deg, #5E736C, #404d48, #5E736C, #404d48);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-fire {
+    background-image: linear-gradient(0deg, #F96D6F, #bd5a5b, #F96D6F, #bd5a5b);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-water {
+    background-image: linear-gradient(0deg, #133258, #11263f, #133258, #11263f);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-grass {
+    background-image: linear-gradient(0deg, #7EC6C5, #528a89, #7EC6C5, #528a89);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-electric {
+    background-image: linear-gradient(0deg, #0C1395, #1c2177, #0C1395, #1c2177);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-psychic {
+    background-image: linear-gradient(0deg, #E52D2D, #963838, #E52D2D, #963838);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-ice {
+    background-image: linear-gradient(0deg, #6FBEDF, #53889e, #6FBEDF, #53889e);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-dragon {
+    background-image: linear-gradient(0deg, #478A93, #2f7f8a, #478A93, #2f7f8a);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+
+.bg-lg-dark {
+    background-image: linear-gradient(0deg, #030706, #000, #030706, #000);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-fairy {
+    background-image: linear-gradient(0deg, #971B45, #631c34, #971B45, #631c34);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-unknown {
+    background-image: linear-gradient(0deg, #696767, #504545, #696767, #504545);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+.bg-lg-shadow {
+    background-image: linear-gradient(0deg, #6c31a3, #4b2a69, #6c31a3, #4b2a69);
+    background-size: 100% 300%;
+    animation: animateBg 2s linear infinite;
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
